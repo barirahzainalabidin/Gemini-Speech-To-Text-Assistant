@@ -5,6 +5,6 @@ Here steps to use my gemini speech assistant :
 
 1. Copy Gemini Key from web
 
-2. Click my app - https://gemini-voice-assistance.streamlit.app/
+2. Click my app - https://gemini-text-to-voice-assistance.streamlit.app/
 
 3. Paste your key & start interaction !
