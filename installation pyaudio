@@ -1,7 +1,4 @@
-# Upgrade pip to the latest version
-pip install --upgrade pip
-
-# Install PyAudio after dependencies are installed
+# Install sound device after dependencies are installed
 pip install sounddevice
 pip install soundfile
 
