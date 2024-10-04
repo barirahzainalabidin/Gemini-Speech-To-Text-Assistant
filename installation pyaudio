@@ -5,7 +5,8 @@ pip install --upgrade pip
 apt-get install -y portaudio19-dev
 
 # Install PyAudio after dependencies are installed
-pip install pyaudio==0.2.14
+pip install sounddevice
+pip install soundfile
 
 # Install SpeechRecognition
 pip install SpeechRecognition
