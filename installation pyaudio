@@ -1,9 +1,6 @@
 # Upgrade pip to the latest version
 pip install --upgrade pip
 
-# Install system dependencies for PyAudio
-apt-get install -y portaudio19-dev
-
 # Install PyAudio after dependencies are installed
 pip install sounddevice
 pip install soundfile
