@@ -9,16 +9,16 @@ import tempfile
 # Streamlit app title
 st.title("Gemini Speech Assistant")
 
-# Step 1: Configure the API key
+# Configure the API key
 api_key = st.text_input("Enter your Gemini API Key:", type="password")
 if api_key:
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel('gemini-pro')
 
-# Step 2: Allow user to choose between text input or speech
+# Allow user to choose between text input or speech
 mode = st.radio("Select input mode:", ("Text", "Speech"))
 
-# Step 3: Input handling based on the selected mode
+# Input handling based on the selected mode
 user_input = ""
 if mode == "Text":
     user_input = st.text_input("Type your query here:")
@@ -35,7 +35,7 @@ elif mode == "Speech":
             except Exception as e:
                 st.error(f"Error: {str(e)}")
 
-# Step 4: Generate response from Gemini API
+# Generate response from Gemini API
 if user_input:
     try:
         response = model.generate_content(user_input)
