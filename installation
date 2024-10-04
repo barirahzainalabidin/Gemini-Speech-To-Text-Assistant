@@ -1,17 +1,3 @@
-# Install sound device after dependencies are installed
-pip install sounddevice
-pip install soundfile
-
-# Upgrade pip to the latest version
-pip install --upgrade pip
-
-# Install necessary system dependencies for PyAudio
-sudo apt-get update
-sudo apt-get install -y libportaudio2 libportaudiocpp0 portaudio19-dev
-
-# Install PyAudio using pip
-pip install pyaudio
-
 # Install SpeechRecognition
 pip install SpeechRecognition
 
