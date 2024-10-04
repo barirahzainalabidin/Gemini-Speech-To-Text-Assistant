@@ -1,0 +1,3 @@
+gemini_streamlit_app/
+  ├── app.py          # Main Streamlit app code
+  ├── requirements.txt # List of required dependencies for easy installation
