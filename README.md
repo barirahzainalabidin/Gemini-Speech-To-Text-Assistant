@@ -1,4 +1,4 @@
-# Gemini-Speech-Assistant
+# Gemini-Speech-To-Text-Assistant
 Model - Gemini 1.5 Flash / Pro
 
 Here steps to use my gemini speech assistant :
