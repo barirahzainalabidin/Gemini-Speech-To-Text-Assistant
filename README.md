@@ -7,4 +7,4 @@ Here steps to use my gemini speech assistant :
 
 2. Click my app - https://gemini-text-to-voice-assistance.streamlit.app/
 
-3. Paste your key & start interaction !
+3. Paste your key & start chat !
