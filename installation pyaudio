@@ -1,5 +1,6 @@
 pip install --upgrade pip
 apt-get install -y portaudio19-dev
+sudo apt-get install libportaudio2 libportaudiocpp0 portaudio19-dev
 pip install pyaudio>=24.2
 pip install SpeechRecognition
 pip install gtts
