@@ -2,7 +2,7 @@
 pip install --upgrade pip
 
 # Install system dependencies for PyAudio
-sudo apt-get install -y portaudio19-dev
+apt-get install -y portaudio19-dev
 
 # Install PyAudio after dependencies are installed
 pip install pyaudio==0.2.14
