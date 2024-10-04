@@ -1,7 +1,7 @@
-# Gemini-Speech-To-Text-Assistant
+# Gemini-Text-To-Speech-Assistant
 Model - Gemini 1.5 Flash / Pro
 
-Here steps to use my gemini speech assistant :
+Here steps to use my gemini text to speech assistant :
 
 1. Copy Gemini Key from web
 
