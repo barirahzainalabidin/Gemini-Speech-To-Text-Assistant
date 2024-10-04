@@ -2,8 +2,6 @@ import streamlit as st
 import google.generativeai as genai
 from gtts import gTTS
 import speech_recognition as sr
-import os
-from io import BytesIO
 import tempfile
 
 # Streamlit app title
@@ -16,24 +14,25 @@ if api_key:
     model = genai.GenerativeModel('gemini-pro')
 
 # Allow user to choose between text input or speech
-mode = st.radio("Select input mode:", ("Text", "Speech"))
+mode = st.radio("Select input mode:", ("Text", "Record Audio"))
 
 # Input handling based on the selected mode
 user_input = ""
 if mode == "Text":
     user_input = st.text_input("Type your query here:")
-elif mode == "Speech":
-    st.info("Click the button below and speak to your microphone.")
+elif mode == "Record Audio":
+    recognizer = sr.Recognizer()
+    st.write("Click the 'Record' button and speak into your microphone.")
     if st.button("Record"):
-        recognizer = sr.Recognizer()
-        with sr.Microphone() as source:
-            st.write("Listening...")
-            try:
-                audio_data = recognizer.listen(source, timeout=5)
+        try:
+            # Attempt to access the microphone
+            with sr.Microphone() as source:
+                st.write("Listening...")
+                audio_data = recognizer.listen(source, timeout=5)  # Listen for 5 seconds
                 user_input = recognizer.recognize_google(audio_data)
                 st.write("You said: ", user_input)
-            except Exception as e:
-                st.error(f"Error: {str(e)}")
+        except Exception as e:
+            st.error(f"An error occurred while accessing the microphone: {str(e)}")
 
 # Generate response from Gemini API
 if user_input:
