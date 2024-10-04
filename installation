@@ -1,6 +1,7 @@
 # Install sound device after dependencies are installed
 pip install sounddevice
 pip install soundfile
+pip install pyaudio==0.2.11
 
 # Install SpeechRecognition
 pip install SpeechRecognition
