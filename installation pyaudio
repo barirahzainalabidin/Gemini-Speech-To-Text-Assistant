@@ -1,6 +1,6 @@
 pip install --upgrade pip
 apt-get install -y portaudio19-dev
-pip install pyaudio
+pip install pyaudio>=24.2
 pip install SpeechRecognition
 pip install gtts
 pip install -q -U "google-generativeai>=0.7.2"
